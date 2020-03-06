@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 390px;
+            height: 685px;
+        }
+        
+        #one {
+            color: red;
+            font-size: large;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        input {
+            height: 27px;
+            width: 350px;
+        }
+        
+        #last {
+            height: 30px;
+            width: 350px;
+            text-align: center;
+            /* background-color: lightgray; */
+        }
+        
+        #two {
+            height: 33px;
+            width: 354px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset>
+        <legend id="one">学生档案</legend>
+        <form>
+            <p>姓名：</p>
+            <input type="text" placeholder="请输入姓名" name="name" required/>
+            <span>*</span>
+            <P>学号：</P>
+            <input type="number" placeholder="请输入学号" name="no" required/>
+            <span>*</span>
+            <P>手机号码：</P>
+            <input type="tel" placeholder="请输入手机号" name="p" required/>
+            <span>*</span>
+            <P>邮箱地址：</P>
+            <input type="email" name="email" placeholder="请输入邮箱地址" required/>
+            <span>*</span>
+            <p>录取学校：</p>
+            <input id="two" type="search" name="school" list="mingcheng" />
+            <datalist id="mingcheng">
+                <option>清华大学</option>
+                <option>北京大学</option>
+                <option>重庆大学</option>
+                <option>燕山大学</option>
+                <option>河北师范大学</option>
+                <option>武汉大学</option>
+                <option>中国人民大学</option>
+                <option>北京师范大学</option>
+                <option>重庆医科大学</option>
+            </datalist>
+            <p>入学成绩：</p>
+            <input type="number" name="score" />
+            <p>入学时间：</p>
+            <input type="date" name="date" />
+            </br>
+            </br>
+            <input id="last" type="submit" value="提交" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
