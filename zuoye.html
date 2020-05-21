@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片墙</title>
+    <style>
+        ul {
+            margin: auto;
+            width: 1200px;
+            height: 700px;
+            background-image: url(images/bg3.JPG);
+            background-size: 1200px 700px;
+            background-repeat: no-repeat;
+        }
+        
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            background-color: white;
+            margin-left: 40px;
+            box-shadow: 0px 0px 5px rgb(137, 232, 245);
+        }
+        
+        ul li:nth-child(1) {
+            width: 150px;
+            height: 130px;
+            margin-top: 50px;
+            transform: rotate(-5deg);
+        }
+        
+        ul li:nth-child(1):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li:nth-child(2) {
+            width: 105px;
+            height: 130px;
+            margin-top: 30px;
+            transform: rotate(3deg);
+        }
+        
+        ul li:nth-child(2):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li:nth-child(3) {
+            width: 137px;
+            height: 130px;
+            margin-top: 15px;
+            transform: rotate(-15deg);
+        }
+        
+        ul li:nth-child(3):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li:nth-child(4) {
+            width: 132px;
+            height: 130px;
+            margin-top: 20px;
+            transform: rotate(3deg);
+        }
+        
+        ul li:nth-child(4):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li:nth-child(5) {
+            width: 115px;
+            height: 130px;
+            margin-top: 28px;
+            transform: rotate(-4deg);
+        }
+        
+        ul li:nth-child(5):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li:nth-child(6) {
+            width: 125px;
+            height: 130px;
+            margin-top: 34px;
+            transform: rotate(-10deg);
+        }
+        
+        ul li:nth-child(6):hover {
+            transform: rotate(0deg);
+            transform: scale(1.2, 1.2);
+        }
+        
+        ul li img {
+            display: block;
+            height: 85px;
+            margin-top: 7px;
+            margin-left: 7px;
+        }
+        
+        ul li p {
+            text-align: center;
+            color: rgb(94, 91, 91);
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 综合运用CSS阴影、透明效果、变形动画.使用移动、旋转、缩放等函数控制元素。 -->
+    <ul>
+        <li>
+            <img src="images/11.jpg" />
+            <p>相识</p>
+        </li>
+        <li>
+            <img src="images/22.jpg" />
+            <P>凝视</P>
+        </li>
+        <li>
+            <img src="images/33.jpg" />
+            <p>甜睡</p>
+        </li>
+        <li>
+            <img src="images/44.jpg" />
+            <p>逗乐</p>
+        </li>
+        <li>
+            <img src="images/55.jpg" />
+            <p>奔跑</p>
+        </li>
+        <li>
+            <img src="images/66.jpg" />
+            <p>漠视</p>
+        </li>
+    </ul>
+
+</body>
+
+</html>
